@@ -3,11 +3,6 @@
 *.iml
 **/.*
 
-# Built using tsc
-typedoc-plugin-external-module-name.js
-getRawComment.js
-typedocVersionCompatibility.js
-
 # test cache
 .downstream_cache
 
