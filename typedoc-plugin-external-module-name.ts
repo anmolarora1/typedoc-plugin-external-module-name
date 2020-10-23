@@ -100,7 +100,7 @@ export class ExternalModuleNamePlugin extends ConverterComponent {
 
     const commonParent = rootFileNames.reduce(
       (acc, entry) => commonPrefix(acc, path.dirname(path.resolve(dir, entry))),
-      path.resolve(rootFileNames[0]),
+      path.resolve(!!rootFileNames.length ? rootFileNames[0] : '.'),
     );
 
     this.baseDir = options.rootDir || options.baseUrl || commonParent;
